@@ -4,14 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Finder</title>
+
+    <!-- Link to external CSS file for styling -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts for improved typography -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
+        <!-- Main title of the application -->
         <h1>📚 Book Finder</h1>
+
+        <!-- Input field for searching books -->
         <input type="text" id="search-box" placeholder="Search for books...">
 
+        <!-- Dropdown menu for filtering by genre -->
         <select id="genre-filter">
             <option value="">All Genres</option>
             <option value="Fiction">Fiction</option>
@@ -26,6 +34,7 @@
             <option value="Self-Help">Self-Help</option>
         </select>
 
+        <!-- Dropdown menu for filtering by language -->
         <select id="language-filter">
             <option value="">All Languages</option>
             <option value="en">English</option>
@@ -38,15 +47,20 @@
             <option value="ru">Russian</option>
         </select>
 
+        <!-- Search button that triggers the searchBooks() function -->
         <button onclick="searchBooks()">Search</button>
 
+        <!-- Section where the search results will be displayed -->
         <div id="results"></div>
 
+        <!-- Pagination buttons for navigating through search results -->
         <div class="pagination">
             <button id="prev-btn" onclick="prevPage()" disabled>⬅️ Previous</button>
             <button id="next-btn" onclick="nextPage()" disabled>Next ➡️</button>
         </div>
     </div>
+
+    <!-- Link to external JavaScript file for functionality -->
     <script src="script.js"></script>
 </body>
 </html>
