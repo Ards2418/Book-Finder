@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>📚 Book Finder</h1>
+        <input type="text" id="search-box" placeholder="Search for books...">
+
+        <select id="genre-filter">
+            <option value="">All Genres</option>
+            <option value="Fiction">Fiction</option>
+            <option value="Science">Science</option>
+            <option value="History">History</option>
+            <option value="Mystery">Mystery</option>
+            <option value="Fantasy">Fantasy</option>
+            <option value="Romance">Romance</option>
+            <option value="Thriller">Thriller</option>
+            <option value="Horror">Horror</option>
+            <option value="Biography">Biography</option>
+            <option value="Self-Help">Self-Help</option>
+        </select>
+
+        <select id="language-filter">
+            <option value="">All Languages</option>
+            <option value="en">English</option>
+            <option value="fr">French</option>
+            <option value="es">Spanish</option>
+            <option value="de">German</option>
+            <option value="it">Italian</option>
+            <option value="ja">Japanese</option>
+            <option value="zh">Chinese</option>
+            <option value="ru">Russian</option>
+        </select>
+
+        <button onclick="searchBooks()">Search</button>
+
+        <div id="results"></div>
+
+        <div class="pagination">
+            <button id="prev-btn" onclick="prevPage()" disabled>⬅️ Previous</button>
+            <button id="next-btn" onclick="nextPage()" disabled>Next ➡️</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
